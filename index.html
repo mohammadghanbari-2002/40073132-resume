@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -7,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="main-card">
     <header class="header">
       <img src="profile.jpg" alt="Mohammad Ghanbari" class="profile-img">
@@ -21,8 +21,8 @@
           <li><a href="https://www.linkedin.com/in/mohammad-ghanbari-66aaa9231" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
+      <span class="online-count">Online Users: 0</span>
     </header>
-
     <main class="container">
       <section>
         <h2>About</h2>
@@ -30,7 +30,6 @@
           Passionate backend developer with a strong interest in server-side development and the challenges of building online game servers. I have hands-on experience working with various backend technologies and frameworks, constantly exploring new approaches to create scalable and high-performance systems.
         </p>
       </section>
-
       <section>
         <h2>Education</h2>
         <h3>Bachelor of Computer Engineering</h3>
@@ -38,7 +37,6 @@
         <p>Graduation Year: 2025</p>
         <p>GPA: 17.90 out of 20</p>
       </section>
-
       <section>
         <h2>Experience</h2>
         <h3>Backend Developer - Diaco Studios</h3>
@@ -50,7 +48,6 @@
           <li>Collaborating with frontend team for API integration</li>
         </ul>
       </section>
-
       <section>
         <h2>Skills</h2>
         <div class="skills-grid">
@@ -97,7 +94,6 @@
           </div>
         </div>
       </section>
-
       <section id="languages">
         <h2>Languages</h2>
         <div class="languages-grid">
@@ -111,12 +107,40 @@
           </div>
         </div>
       </section>
+      <section id="project-request">
+        <h2>Project Request</h2>
+        <form id="project-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="title">Project Title</label>
+            <input type="text" id="title" name="title" required minlength="3" maxlength="100">
+          </div>
+          <div class="form-group">
+            <label for="description">Project Description</label>
+            <textarea id="description" name="description" required minlength="10" maxlength="1000"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="estimated_budget">Estimated Budget</label>
+            <input type="text" id="estimated_budget" name="estimated_budget" required>
+          </div>
+          <div class="form-group">
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline" name="deadline" required>
+          </div>
+          <button type="submit">Submit Request</button>
+        </form>
+      </section>
     </main>
-
     <footer>
       <p>© 2025 Mohammad Ghanbari — All Rights Reserved</p>
     </footer>
   </div>
-
-</body>
+  <script src="script.js"></script></body>
 </html>
